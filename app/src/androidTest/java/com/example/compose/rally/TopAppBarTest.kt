@@ -12,12 +12,14 @@ class TopAppBarTest {
 
     @Test
     fun rallyTopAppBarTest() {
+        val allScreens = RallyScreen.values().toList()
         composeTestRule.setContent {
             RallyTopAppBar(
-                allScreens = ,
-                onTabSelected = { /*TODO*/ },
-                currentScreen =
+                allScreens = allScreens,
+                onTabSelected = { },
+                currentScreen = RallyScreen.Accounts
             )
         }
+        Thread.sleep(5000)
     }
 }
